@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>For Susma · A little light</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #070b19;
+      color: #f6f1e8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 60px 22px;
+      background:
+        radial-gradient(ellipse at 75% 15%, #33305766, transparent 48%),
+        radial-gradient(ellipse at 15% 85%, #18394c55, transparent 50%),
+        #070b19;
+    }
+
+    .stars {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      background: #fff5dc;
+      opacity: .5;
+      animation: shimmer var(--duration) ease-in-out infinite alternate;
+    }
+
+    @keyframes shimmer {
+      from { opacity: .15; }
+      to { opacity: .85; }
+    }
+
+    main {
+      position: relative;
+      width: min(100%, 650px);
+      padding: 46px 30px;
+      text-align: center;
+      border: 1px solid #e5d3b025;
+      border-radius: 28px;
+      background: #0b1124c9;
+      box-shadow: 0 28px 100px #0005;
+    }
+
+    .moon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 32px;
+      border-radius: 50%;
+      background: #f4e6c8;
+      box-shadow: 0 0 55px #efdfb72b;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .moon::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #121729;
+      top: -10px;
+      left: 19px;
+    }
+
+    .eyebrow, footer, .hint {
+      font-family: system-ui, sans-serif;
+    }
+
+    .eyebrow {
+      color: #cbb992;
+      text-transform: uppercase;
+      letter-spacing: .25em;
+      font-size: .68rem;
+    }
+
+    h1 {
+      font-size: clamp(3.3rem, 12vw, 5.4rem);
+      font-weight: 400;
+      letter-spacing: -.04em;
+      margin: 20px 0;
+    }
+
+    .intro {
+      font-size: clamp(1.2rem, 4vw, 1.5rem);
+      line-height: 1.7;
+      color: #ddd5e7;
+    }
+
+    .divider {
+      width: 42px;
+      height: 1px;
+      background: #cbb99270;
+      margin: 30px auto;
+    }
+
+    p {
+      line-height: 1.9;
+      color: #bec3d5;
+      font-size: 1.05rem;
+    }
+
+    details { margin-top: 30px; }
+
+    summary {
+      display: inline-block;
+      padding: 14px 24px;
+      border: 1px solid #cbb99270;
+      border-radius: 999px;
+      color: #eddfc2;
+      cursor: pointer;
+      font-family: system-ui, sans-serif;
+      font-size: .9rem;
+      list-style: none;
+      transition: background .2s;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    summary:hover { background: #cbb99214; }
+    summary:focus-visible { outline: 2px solid #eddfc2; outline-offset: 5px; }
+
+    .letter {
+      margin-top: 26px;
+      padding: 20px;
+      border-radius: 18px;
+      background: #ffffff04;
+    }
+
+    .letter p:first-child { color: #f0e3cc; }
+
+    .hint {
+      font-size: .75rem;
+      color: #a6adc3;
+      margin-top: 18px;
+    }
+
+    footer {
+      margin-top: 38px;
+      font-size: .7rem;
+      letter-spacing: .12em;
+      color: #a6adc3;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars" aria-hidden="true" id="stars"></div>
+
+  <main>
+    <div class="moon" aria-hidden="true"></div>
+    <div class="eyebrow">A little light, just for you</div>
+
+    <h1>Susma.</h1>
+
+    <div class="intro">
+      Even on the quietest nights,<br>
+      you deserve a little warmth.
+    </div>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <p>
+      You don’t have to find the right words today.<br>
+      You don’t have to pretend everything is okay.
+    </p>
+
+    <p>
+      This is simply a small reminder:<br>
+      you deserve kindness, honesty, and peace.
+    </p>
+
+    <details>
+      <summary>A small note for you ✧</summary>
+      <div class="letter">
+        <p>Susma, be gentle with yourself tonight. 🌙</p>
+        <p>
+         
+It’s okay to cry. You don’t have to forget everything or feel better all at once. What happened doesn’t define your worth, and you deserve kindness and honesty.
+Little by little, you can leave the hurt behind without blaming yourself for caring. For tonight, take a breath, sip some water, and rest.
+I’m sorry I added to your hurt today. If you want company, I’m here to listen—no pressure to reply.
+You don’t have to solve yesterday tonight.
+        </p>
+        <p>
+          If you ever feel like talking, I’d be happy to listen.
+          If you need space, I respect that too.
+        </p>
+        <p>
+          Take your time. Your heart doesn’t owe anyone a deadline.
+        </p>
+      </div>
+    </details>
+
+    <p class="hint">Only open it if you feel like it. No reply needed.</p>
+    <footer>MADE WITH CARE · NOTHING ASKED IN RETURN</footer>
+  </main>
+
+  <script>
+    const sky = document.getElementById("stars");
+    const stars = document.createDocumentFragment();
+
+    for (let i = 0; i < 90; i++) {
+      const star = document.createElement("span");
+      star.className = "star";
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.top = `${Math.random() * 100}%`;
+      star.style.setProperty("--duration", `${3 + Math.random() * 5}s`);
+      star.style.animationDelay = `${-Math.random() * 8}s`;
+      stars.appendChild(star);
+    }
+
+    sky.appendChild(stars);
+  </script>
+</body>
+</html>
